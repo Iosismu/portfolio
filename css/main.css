@@ -79,11 +79,33 @@ header .main-menu ul.menu .item a:hover {
 color: white;
 }
 
-
-.profile {
+/* SUMMARY */
+.summary {
   margin-top: 50px;
   height: 400px;
+}
+.summary .inner {
 
+}
+.summary .inner .sum {
+  position: absolute;
+  top: 90px;
+  left: 25%;
+}
+.summary .inner .sum h1 {
+  font-size: 40px;
+  font-weight: 700;
+  display: block;
+  margin-left: 200px;
+  line-height: 100px;
+}
+.summary .inner .sum p{
+  font-size: 16px;
+}
+/* CONCAT */
+/* .profile {
+  margin-top: 1000px;
+  height: 400px;
 }
 .profile .inner {
   width: 600px;
@@ -135,4 +157,4 @@ color: white;
 .profile .inner ul li .git{
   width: 24px;
   height: 24px;
-}
+} */
