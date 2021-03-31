@@ -16,13 +16,18 @@ a {
   margin: 0 auto;
   position: relative; /* inner라는 클래스를 가진 모든 요소는 relative를 가짐으로 따로 추가할 필요가 없다 참고*/
 }
+a.deco {
+  text-decoration: dashed;
+}
 
 /* HEADER */
 header {
   width: 100%;
   position: fixed;
   background-color: #74767a;
-  /* opacity: 0.5;  */
+  top: 0;
+  opacity: 0.5;
+  z-index: 9;
 }
 header > .inner {
   height: 50px;
@@ -35,6 +40,9 @@ header .logo {
   color: black;
   font-weight: 700;
   font-size: 20px;
+}
+header .logo:hover {
+  color: white;
 }
 header .main-menu {
   position: absolute;
@@ -66,4 +74,65 @@ header .main-menu ul.menu .item a {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 13px;
+}
+header .main-menu ul.menu .item a:hover {
+color: white;
+}
+
+
+.profile {
+  margin-top: 50px;
+  height: 400px;
+
+}
+.profile .inner {
+  width: 600px;
+  height: 333px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,.15);
+  position: absolute;
+  top: 100px;
+  left: 28%;
+  display: flex;
+}
+.profile .inner .info {
+  height: 30px;
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  margin: auto;
+}
+.profile .inner .info h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.profile .inner .info p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  color: #7c7c7c;
+  letter-spacing: 12px;
+}
+.profile .inner .bini {
+  width: 140px;
+  height: 140px;
+  border: 0px solid;
+  border-radius: 10px;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+.profile .inner ul {
+  position: absolute;
+  top: 48%;
+  left: 43%;
+}
+.profile .inner ul li {
+  font-size: 15px;
+}
+.profile .inner ul li .git{
+  width: 24px;
+  height: 24px;
 }
