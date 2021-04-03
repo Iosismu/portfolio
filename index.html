@@ -20,10 +20,14 @@
   <meta property="twitter:image" content="./images/flag-south-korea.png" />
   <!-- <meta property="twitter:url" content="https://starbucks.co.kr" /> -->
 
+  <!-- BootStrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
   <!-- CSS -->
   <link rel="icon" href="./images/flag-south-korea.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="./css/main.css" />
@@ -51,7 +55,7 @@
             <a href="javascript:void(0)">PROJECT</a>
           </li>
           <li class="item">
-            <a href="javascript:void(0)">SKILL</a>
+            <a href="javascript:void(0)">STACK</a>
           </li >
           <li class="item">
             <a href="javascript:void(0)">AWARDS</a>
@@ -77,7 +81,7 @@
     <div class="inner">
       <div class="sum">
         <h1>SUMMARY</h1>
-        <p>안녕하세요. FRONT END개발자 박성빈 입니다. 방안에서 컴퓨터만 있으면 무엇이든<br>  만들수 있다는 것에흥미를 느껴 분야에 왔습니다.
+        <p>안녕하세요. <span class="front">FRONT END</span> 개발자 박성빈 입니다. 방안에서 컴퓨터만 있으면 무엇이든<br>  만들수 있다는 것에 흥미를 느껴 분야에 왔습니다.
           맡은 일은 무슨일이 있더라도 끝내고<br>  제 분야와 맞지않는 일을 해도 열심히 할 자신이 있습니다. 
         </p>
       </div>
@@ -93,34 +97,100 @@
         <table>
           <thead>
           <tr>
-            <th class="title a">프로젝트</th><th class="title b">소개</th><th class="title c">진행 현황</th>
+            <th class="title a">프로젝트</th><th class="title b">소개</th><th class="title c">GITHUB & WEBSITE</th>
           </tr>
           </thead>
           <tbody>
           <tr>
-            <th class="table-title">Spring</th>
-            <td>Spring MVC Pattern</td>
-            <th>완료</th>
+            <th class="table-title">CRUD 게시판</th>
+            <td class="table-el">Spring MVC Pattern개발환경에서 CRUD게시판 개발 <br>
+              <span class="badge badge-success">완료</span>
+              <span class="badge badge-success">SPRING MVC</span>
+              <span class="badge badge-primary">MARIADB</span>
+              <span class="badge badge-primary">BOOTSTRAP 4</span>
+              <span class="badge badge-info">JSP</span>
+              <span class="badge badge-dark">MAVEN</span>
+              <span class="badge badge-dark">GITHUB</span>
+              <span class="badge badge-dark">TOMCAT</span>
+            </td>
+            <th><a href="https://github.com/Iosismu/CrudProject" target="_blank" class="git-icon"><img src="./images/GIT2.png" alt=""></a></th>
           </tr>
           <tr>
-            <th class="table-title">HTML JAVASCIPR VANILA</th>
-            <td>Starbucks</td>
-            <th>완료</th>
+            <th class="table-title">STARBUCKS 클론 코딩</th>
+            <td>Starbucks <br>
+              <span class="badge badge-success">완료</span>
+              <span class="badge badge-primary">HTML</span>
+              <span class="badge badge-primary">CSS</span>
+              <span class="badge badge-warning">JS ES6</span>
+              <span class="badge badge-dark">NETLIFY</span>
+              <span class="badge badge-danger">GSAP</span>
+              <span class="badge badge-danger">LODASH</span>
+            </td>
+            <th><a href="https://github.com/Iosismu/starbucks-vanilla-app" target="_blank" class="git-icon"><img src="./images/GIT2.png" alt=""></a></th>
           </tr>
           <tr>
-            <th class="table-title">React,Vue.js</th>
-            <td>개인 블로그</td>
-            <th>미시작</th>
+            <th class="table-title">영화 정보 웹사이트</th>
+            <td>MOVIE <br>
+              <span class="badge badge-success">진행전</span>
+              <span class="badge badge-primary">HTML</span>
+              <span class="badge badge-primary">CSS</span>
+              <span class="badge badge-info">VUE</span>
+              <span class="badge badge-dark">NETLIFY</span>
+              <span class="badge badge-danger">CYPRESS</span>
+              <span class="badge badge-danger">NUXT.JS</span>
+              <span class="badge badge-danger">HEROKU</span>
+            </td>
+            <th><a href="https://github.com/Iosismu/starbucks-vanilla-app" target="_blank" class="git-icon"><img src="./images/GIT2.png" alt=""></a></th>
+          </tr>
+          <tr>
+            <th class="table-title">개인 블로그 </th>
+            <td>개인 블로그 <br>
+              <span class="badge badge-success">완료</span>
+              <span class="badge badge-primary">HTML</span>
+              <span class="badge badge-primary">CSS</span>
+              <span class="badge badge-warning">JS ES6</span>
+              <span class="badge badge-info">REACT</span>
+              <span class="badge badge-info">REDUX</span>
+              <span class="badge badge-info">VUE</span>
+            </td>
+            <th><a href="https://www.naver.com" target="_blank" class="git-icon"><img src="./images/GIT2.png" alt=""></a></th>
+          </tr>
+          <tr>
+            <th class="table-title">자동조향 디스펜스</th>
+            <td>자동 조향 디스펜서 프로젝트에서 안드로이드 앱 개발 <br>
+              <span class="badge badge-success">완료</span>
+              <span class="badge badge-success">ANDROIDSTUDIO</span>
+              <span class="badge badge-primary">MYSQL</span>
+              <span class="badge badge-primary">PYTHON</span>
+              <span class="badge badge-info">FLASK</span>
+              <span class="badge badge-dark">PYTHONANYWHERE</span>
+            </td>
+            <th><a href="https://www.naver.com" target="_blank" class="git-icon"><img src="./images/GIT2.png" alt=""></a></th>
+          </tr>
+          <tr>
+            <th class="table-title">포트폴리오 웹사이트</th>
+            <td>HTML,CSS,JS,API 학습과 동시에 Okky 커뮤니티에서 참고한 포트폴리오 템플릿을 Clone 코딩을 하였습니다. <br>
+              <span class="badge badge-success">완료</span>
+              <span class="badge badge-primary">HTML</span>
+              <span class="badge badge-primary">CSS</span>
+              <span class="badge badge-warning">JS ES6</span>
+              <span class="badge badge-primary">BOOTSTRAP 4</span>
+              <span class="badge badge-dark">NETLIFY</span>
+              <span class="badge badge-danger">GSAP</span>
+              <span class="badge badge-danger">LODASH</span>
+            </td>
+            <th><a href="https://github.com/Iosismu/portfolio" target="_blank" class="git-icon"><img src="./images/GIT2.png" alt=""></a></th>
           </tr>
           </tbody>
         </table>
+        <div class="des">프로젝트들은 높은 중요도로 정렬 하였습니다.</div>
       </div>
     </div>
   </div>
 
+  <div>asdfasd</div>
 
-  <!-- PROFILE -->
-  <!-- <section class="profile">
+  <div class="profile">
     <div class="inner">
 
       <div class="info">
@@ -154,8 +224,12 @@
           </li>
         </ul>
       </div>
-  </section> -->
+  </div>
 
+   <!-- PROFILE -->
+   <div class="profile">
+    
+  </div>
   
 
   <!-- BADGES -->
