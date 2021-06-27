@@ -4,20 +4,31 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4; /*-- 줄높이 --*/
-  font-family: 'Mukta', sans-serif;
+  font-family: "Mukta", sans-serif;
   height: 3000px;
-  background-color: 	#e2e1e0b0;
+  background-color: #e2e1e0b0;
 }
 a {
   text-decoration: none;
 }
-.inner { /* inner란 요소를 가운데로 몰아주는 역할을 한다.*/
+.inner {
+  /* inner란 요소를 가운데로 몰아주는 역할을 한다.*/
   width: 1100px;
   margin: 0 auto;
   position: relative; /* inner라는 클래스를 가진 모든 요소는 relative를 가짐으로 따로 추가할 필요가 없다 참고*/
 }
 a.deco {
   text-decoration: dashed;
+}
+.maintitle {
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Mukta", sans-serif;
+  color: #3f4165;
+}
+.subtitle {
+  font-size: 14.4px;
+  color: #3f4165c2;
 }
 
 /* HEADER */
@@ -71,21 +82,21 @@ header .main-menu ul.menu .item a {
   display: block;
   padding: 11px 50px;
   color: black;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 13px;
 }
 header .main-menu ul.menu .item a:hover {
-color: white;
+  color: white;
 }
 
 /* SUMMARY */
 .summary {
   margin-top: 50px;
+  padding: 90px 0px 0px 0px;
   height: 400px;
 }
 .summary .inner {
-
 }
 .summary .inner .sum {
   position: absolute;
@@ -98,43 +109,35 @@ color: white;
   display: block;
   margin-left: 200px;
   line-height: 100px;
-  color: #3F4165;
+  color: #3f4165;
 }
-.summary .inner .sum p{
+.summary .inner .sum p {
   font-size: 17.6px;
-  color: #3F4165;
-  font-family: 'Noto Sans KR', sans-serif;
+  color: #3f4165;
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
+  text-align: center;
 }
-.summary .inner .sum p .front{
+.summary .inner .sum p .front {
   font-weight: 700;
   font-family: "Mukta";
 }
 
-
 /* PROJECT */
 .project {
-  height: 820px;
+  margin: 50px 50px 50px;
+  padding: 100px 12px 0px;
+  height: 880px;
 }
 .project .inner {
   line-height: 50px;
-}
-.project .inner h1 {
-  font-weight: 700;
-  font-size: 40px;
-  font-family: 'Mukta', sans-serif;
-  color: #3F4165;
-}
-.project .inner p {
-  font-size: 14.4px;
-  color: #3F4165C2;
 }
 .project .inner .list {
   background-color: white;
   width: 100%;
   outline: none;
   border-radius: 2px;
-  box-shadow: 0px 0px 20px 10px rgba(0,0,0,.05);
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
   position: absolute;
   top: 115px;
   padding: 16px;
@@ -150,9 +153,9 @@ color: white;
   font-weight: bold;
   font-size: 15.2px;
   vertical-align: top;
-  color: #3F4165C2;
+  color: #3f4165c2;
   content: "";
-  border-bottom: 1px solid #bcbcbc;
+  border-bottom: 0.3px solid #bcbcbc;
   text-align: center;
 }
 .project .inner .list table th.title.a {
@@ -166,34 +169,34 @@ color: white;
 }
 .project .inner .list table tbody th {
   content: "";
-  border-bottom: 1px solid #bcbcbc;
+  border-bottom: 0.3px solid #bcbcbc;
   border-width: 100%;
   text-align: center;
   vertical-align: middle;
   font-weight: 700;
-  font-family: 'Mukta', sans-serif;
+  font-family: "Mukta", sans-serif;
   font-size: 16.8px;
 }
 .project .inner .list table tbody th.table-title {
-  color: #3F4169;
+  color: #3f4169;
   font-size: 16.8px;
   padding: 16px 8px;
 }
 .project .inner .list table tbody th.table-succes {
   text-align: center;
 }
-.project .inner .list table tbody th .git-icon img{
+.project .inner .list table tbody th .git-icon img {
   width: 40px;
   height: 40px;
   transition: 0.2s;
 }
-.project .inner .list table tbody th .git-icon:hover img{
+.project .inner .list table tbody th .git-icon:hover img {
   width: 77px;
   height: 77px;
 }
 .project .inner .list table tbody td {
   content: "";
-  border-bottom: 1px solid #bcbcbc;
+  border-bottom: 0.3px solid #bcbcbc;
   border-width: 100%;
   vertical-align: middle;
   font-size: 13.2px;
@@ -203,7 +206,7 @@ color: white;
   font-size: 12px;
   vertical-align: middle;
   padding-left: 38%;
-  color: #3F4165C2;
+  color: #3f4165c2;
 }
 
 .project .inner .list table tbody span {
@@ -212,23 +215,120 @@ color: white;
   padding: 3.84px 6.8px;
   margin: 0px 0px 3px;
   font-family: "Noto Sans KR";
-  color: #FFF;
+  color: #fff;
 }
 
+/* STACK */
+.stack {
+  margin: 50px 50px 50px;
+  padding: 100px 12px 0px;
+}
+.stack .inner {
+  line-height: 50px;
+}
+.stack .inner .stackwrap {
+  width: 100%;
+}
+.stack .inner .stackwrap > div {
+  content: "";
+  border-bottom: 1px solid #bcbcbc;
+  margin-bottom: 70px;
+  align-items: center;
+}
+.stack .inner .stackwrap p {
+  color: #3f4165;
+  font-family: "Russo One", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.stack .inner .stackwrap img {
+  width: 170px;
+  height: 120px;
+  padding: 10px;
+}
+.stack .inner .stackwrap img:hover {
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+}
+.stack .inner .stackwrap img.react {
+  width: 190px;
+  height: 130px;
+  margin-left: 15px;
+  animation: rotate 3s infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+.stack .inner .stackwrap img.redux {
+  animation: rotate 3s infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+.stack .inner .stackwrap img.next {
+  animation: rotate 3s infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+.stack .inner .stackwrap img.graph {
+  margin-left: 10px;
+  animation: rotate 3s infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+.stack .inner .stackwrap img.antd {
+  animation: rotate 3s infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+.stack .inner .stackwrap img.script {
+  margin-left: 20px;
+  width: 150px;
+  border-radius: 13px;
+}
+.stack .inner .stackwrap img.webpack {
+  margin-left: 25px;
+  animation: rotate 3s infinite;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+}
+.stack .inner .stackwrap img.sass {
+  margin-left: 35px;
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* .stack .inner .stackwrap .vue {
+  padding-top: 20px;
+  width: 120px;
+  height: 80px;
+} */
+/* .stack .inner .stackwrap div {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+} */
 
+/* .stack .inner ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px; */
 
-
-
+/* width: 270px;
+  height: 192px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05); */
 
 .profile {
-
 }
 .profile .inner {
   width: 600px;
   height: 333px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0,0,0,.15);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
   display: flex;
 }
 .profile .inner .info {
@@ -239,12 +339,12 @@ color: white;
   margin: auto;
 }
 .profile .inner .info h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 40px;
 }
 .profile .inner .info p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 10px;
   color: #7c7c7c;
@@ -267,7 +367,7 @@ color: white;
 .profile .inner ul li {
   font-size: 15px;
 }
-.profile .inner ul li .git{
+.profile .inner ul li .git {
   width: 24px;
   height: 24px;
 }
