@@ -281,6 +281,12 @@ header .main-menu ul.menu .item a:hover {
   width: 150px;
   border-radius: 13px;
 }
+.stack .inner .stackwrap img.android {
+  margin-left: 20px;
+}
+.stack .inner .stackwrap img.flask {
+  margin-left: 47px;
+}
 .stack .inner .stackwrap img.webpack {
   margin-left: 25px;
   animation: rotate 3s infinite;
@@ -321,6 +327,27 @@ header .main-menu ul.menu .item a:hover {
   border-radius: 2px;
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.05); */
 
+/* awards */
+.awards {
+  margin: 40px 20px 50px;
+  padding: 90px 12px 0px;
+  height: 880px;
+}
+.awards .inner {
+}
+.awards .inner .maintitle {
+  margin-bottom: 38px;
+  text-align: center;
+}
+.awards .inner .subtitle {
+}
+.awards .inner .content {
+  background-color: #fff;
+  height: 600px;
+  border-radius: 10px;
+}
+
+/* profile */
 .profile {
 }
 .profile .inner {
