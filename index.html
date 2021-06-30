@@ -19,7 +19,12 @@
     <meta property="twitter:description" content="Bini's Portfolio" />
     <meta property="twitter:image" content="./images/flag-south-korea.png" />
     <!-- <meta property="twitter:url" content="https://starbucks.co.kr" /> -->
-
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- BootStrap -->
     <link
       rel="stylesheet"
@@ -49,8 +54,32 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <!--GSAP & ScrollToPlugin-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+      crossorigin="anonymous"
+    ></script>
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <!--Lodash-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/main.css" />
-
     <!-- JS -->
     <script defer src="./js/main.js"></script>
   </head>
@@ -105,8 +134,8 @@
     </header>
 
     <!-- SUMMARY -->
-    <div id="summary" class="summary">
-      <div class="inner">
+    <section id="summary" class="summary scroll-spy">
+      <div class="inner back-to-position to-right">
         <div class="sum">
           <h1>SUMMARY</h1>
           <p>
@@ -118,11 +147,11 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- PROJECT -->
-    <div id="project" class="project">
-      <div class="inner">
+    <section id="project" class="project scroll-spy">
+      <div class="inner back-to-position to-left delay-2">
         <h1 class="maintitle">PROJECT</h1>
         <p class="subtitle">
           프로젝트를 진행하면서 완전히 저의 것으로 만들기 위해서 여러가지
@@ -227,7 +256,8 @@
               <tr>
                 <th class="table-title">자동조향 디스펜스</th>
                 <td>
-                  자동 조향 디스펜서 프로젝트에서 안드로이드 앱 개발 <br />
+                  자동 조향 디스펜서 프로젝트에서 안드로이드 앱 & 서버 개발
+                  <br />
                   <span class="badge badge-success">완료</span>
                   <span class="badge badge-success">ANDROIDSTUDIO</span>
                   <span class="badge badge-primary">MYSQL</span>
@@ -237,11 +267,11 @@
                 </td>
                 <th>
                   <a
-                    href="https://www.naver.com"
+                    href="https://drive.google.com/file/d/1-wVoEsHO1RMcmw0rxPmIuwo59JYxVq9H/view?usp=sharing"
                     target="_blank"
                     class="git-icon"
                     ><img
-                      src="https://cdn.worldvectorlogo.com/logos/notion-2.svg"
+                      src="https://cdn.worldvectorlogo.com/logos/google-docs-icon-2.svg"
                       alt=""
                   /></a>
                 </th>
@@ -274,16 +304,16 @@
           <div class="des">프로젝트들은 높은 중요도로 정렬 하였습니다.</div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="stack" class="stack">
+    <section id="stack" class="stack scroll-spy">
       <div class="inner">
         <h1 class="maintitle">STACK</h1>
         <p class="subtitle">
           새로운 스킬을 배운것에 주저없이 시작하고 흥미를 느끼며 좋아합니다.
         </p>
         <div class="stackwrap">
-          <div class="front">
+          <div class="front back-to-position to-right delay-0">
             <p>Front-End</p>
             <img
               src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
@@ -353,19 +383,19 @@
               class="script"
             />
             <img
-              src="https://cdn.worldvectorlogo.com/logos/html5-2.svg"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"
               alt="react"
               class="script"
             />
             <img
-              src="https://img.icons8.com/windows/452/css3-logo.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
               alt="react"
-              class="script"
+              class="css"
             />
             <img
               src="https://cdn.worldvectorlogo.com/logos/apollo-graphql-compact.svg"
               alt="react"
-              class="graph"
+              class="apollo"
             />
             <img
               src="https://cdn.worldvectorlogo.com/logos/graphql.svg"
@@ -377,8 +407,22 @@
               alt="react"
               class="android"
             />
+            <img
+              src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_96102ac6497377cd53da621075fe828e/sanity.png"
+              alt="react"
+              class="android"
+            />
+            <img
+              src="https://media.vlpt.us/images/ppohee/post/b160a004-f662-4b5a-b1e0-06252ccce1c0/jestlogo.png"
+              alt="react"
+            />
+            <img
+              src="https://miro.medium.com/max/7200/1*Jkb_tsMBOvL6wQ8bzldu8Q.png"
+              alt="react"
+              class="cypress"
+            />
           </div>
-          <div class="back">
+          <div class="back back-to-position to-left delay-1">
             <p>Back-End & Database</p>
             <img
               src="https://cdn.worldvectorlogo.com/logos/spring-3.svg"
@@ -422,7 +466,7 @@
               class="flask"
             />
           </div>
-          <div class="Server">
+          <div class="Server back-to-position to-right delay-2">
             <p>Deploy & Serverless</p>
             <img
               src="https://cdn.worldvectorlogo.com/logos/aws-2.svg"
@@ -469,7 +513,7 @@
               alt="react"
             />
           </div>
-          <div class="Server">
+          <div class="Server back-to-position to-left delay-3">
             <p>Version & Docs</p>
             <img
               src="https://cdn.worldvectorlogo.com/logos/git.svg"
@@ -530,18 +574,36 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- AWARDS -->
-    <div id="awards" class="awards">
+    <section id="awards" class="awards scroll-spy">
       <div class="inner">
         <h1 class="maintitle">AWARDS</h1>
-        <div class="content"></div>
+        <div class="content">
+          <img
+            src="./images/1.PNG"
+            alt=""
+            class="system back-to-position to-right"
+          />
+          <img
+            src="./images/KakaoTalk_20210628_182041440.jpg"
+            alt=""
+            class="back-to-position to-left delay-0"
+          />
+          <div class="awards-content">
+            <h1>IOT 자동조향 디퓨저</h1>
+            <p><strong>수상:</strong> 우수상</p>
+            <p><strong>인원:</strong> 10명</p>
+            <p><strong>맡은 일:</strong> 서버, 안드로이드</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div id="contact" class="profile">
-      <div class="inner">
+    <!-- PROFILE -->
+    <section id="contact" class="profile scroll-spy">
+      <div class="inner back-to-position to-bottom">
         <div class="info">
           <h3>PARK SEONG BIN</h3>
           <p>FRONT END DEVELOPER</p>
@@ -566,16 +628,13 @@
           <li>
             <img src="./images/GIT2.png" alt="" class="git" />
             GITHUB :
-            <a href="https://github.com/Iosismu" class="deco"
+            <a href="https://github.com/Iosismu" class="deco" target="_blank"
               >https://github.com/Iosismu</a
             >
           </li>
         </ul>
       </div>
-    </div>
-
-    <!-- PROFILE -->
-    <div class="profile"></div>
+    </section>
 
     <!-- BADGES -->
     <div class="badges">
