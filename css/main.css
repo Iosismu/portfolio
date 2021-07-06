@@ -427,6 +427,7 @@ header .main-menu ul.menu .item a:hover {
 
 /* profile */
 .profile {
+  padding-bottom: 150px;
 }
 .profile .inner {
   width: 600px;
@@ -521,7 +522,7 @@ header .main-menu ul.menu .item a:hover {
 .awards .inner .content .awards-content h1 {
   font-size: 40px;
   font-weight: bold;
-  color: pink;
+  color: #3f4165c2;
   position: absolute;
   left: 470px;
   /* text-shadow: 0 2px 2px #ff0000, -2px 5px 0 #ff7f00, -4px 10px 0 #ffff00,
@@ -542,8 +543,8 @@ header .main-menu ul.menu .item a:hover {
   font-weight: bold;
   color: #4a5ae9;
   position: absolute;
-  left: 120px;
-  top: 150px;
+  left: 100px;
+  top: 180px;
   text-shadow: 0 1px 2px #c48564, 1px 3px 1px #c07d59, 2px 5px 1px #4b66df,
     4px 7px 1px #a6633f, 6px 9px 1px #4979df, 8px 11px 1px #4533e7,
     10px 13px 1px #6f422a, 12px 15px 1px #845ae4, 14px 17px 1px #2956eb;
@@ -553,7 +554,7 @@ header .main-menu ul.menu .item a:hover {
   font-weight: bold;
   color: green;
   position: absolute;
-  left: 100px;
+  left: 180px;
   top: 100px;
 }
 .awards .inner .content .awards-content a.j {
@@ -580,7 +581,7 @@ header .main-menu ul.menu .item a:hover {
 .awards .inner .content .awards-content p.fl {
   font-size: 35px;
   font-weight: bold;
-  color: white;
+  color: black;
   position: absolute;
   left: 600px;
   top: 300px;
@@ -588,17 +589,17 @@ header .main-menu ul.menu .item a:hover {
 .awards .inner .content .awards-content p.d {
   font-size: 25px;
   font-weight: bold;
-  color: black;
+  color: #fffb8c;
   position: absolute;
   left: 800px;
-  top: 300px;
+  top: 250px;
 }
 .awards .inner .content .awards-content p.my {
   font-size: 30px;
   font-weight: bold;
-  color: black;
+  color: #496899;
   position: absolute;
-  left: 800px;
+  left: 900px;
   top: 100px;
 }
 .awards .inner .content .awards-content p.ja {
@@ -607,7 +608,7 @@ header .main-menu ul.menu .item a:hover {
   position: absolute;
   left: 400px;
   top: 200px;
-  color: #121212;
+  color: #997249;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
     0px -4px 10px rgba(255, 255, 255, 0.3);
 }
