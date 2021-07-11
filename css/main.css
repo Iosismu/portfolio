@@ -309,6 +309,7 @@ header .main-menu ul.menu .item a:hover {
 .stack {
   margin: 50px 50px 50px;
   padding: 100px 12px 0px;
+  margin-top: 240px;
 }
 .stack .inner {
   line-height: 50px;
